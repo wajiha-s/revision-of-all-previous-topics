@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class Clock
+{
+private:
+    int hours, minutes, seconds;
+public:
+    Clock(int h, int m, int s) 
+    {
+        hours = h;
+        minutes = m;
+        seconds = s;
+    }
+    void display()
+    {
+        cout << hours << ":" << minutes << ":" << seconds << endl;
+    }
+};
+
+int main()
+{
+    Clock c1(10, 30, 45);
+    c1.display();
+return 0;
+}
