@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class Car
+{
+public:
+    Car()
+    {
+        cout << "Car object created" << endl;
+    }
+    ~Car()
+    {
+        cout << "Car object destroyed" << endl;
+    }
+};
+
+int main()
+{
+    Car c1;
+    Car c2;
+    return 0;
+}
