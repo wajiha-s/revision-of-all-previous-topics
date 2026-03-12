@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class BankAccount
+{
+private:
+    int balance;
+public:
+    BankAccount(int b)
+    { 
+    balance = b; 
+    }
+    friend void displayBalance(BankAccount b);
+};
+
+void displayBalance(BankAccount b)
+{
+    cout << "Balance=" << b.balance << endl;
+}
+
+int main()
+{
+    BankAccount acc(10000);
+    displayBalance(acc);
+    return 0;
+}
