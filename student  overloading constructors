@@ -1,0 +1,40 @@
+//in this program we discussed overloading constructors 
+#include<iostream>
+using namespace std;
+class Student
+{
+private:
+    int id, marks;
+public:
+    Student()           
+    {
+        id = 0;
+        marks = 0;
+    }
+    Student(int i)      
+    {
+        id = i;
+        marks = 0;
+    }
+    Student(int i,int m)  
+    {
+        id = i;
+        marks = m;
+    }
+    void display()
+    {
+        cout << "ID=" << id << " Marks=" << marks << endl;
+    }
+};
+
+int main()
+{
+    Student s1;
+    Student s2(101);
+    Student s3(102, 95);
+
+    s1.display();
+    s2.display();
+    s3.display();
+    return 0;
+}
