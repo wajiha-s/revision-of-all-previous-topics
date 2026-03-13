@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+class NumberSwapper
+{
+private:
+    int a;
+    int b;
+
+public:
+    void setData(int x, int y)
+    {
+        a = x;
+        b = y;
+    }
+    void display()
+    {
+        cout << "A = " << a << endl;
+        cout << "B = " << b << endl;
+    }
+    void swapNumbers(int x, int y)
+    {
+        int swap;
+        swap = x;
+        x = y;
+        y = swap;
+
+        cout << "swap function:" << endl;
+        cout << "A = " << x << endl;
+        cout << "B = " << y << endl;
+    }
+};
+int main()
+{
+    NumberSwapper n1;
+
+    n1.setData(5, 10);
+
+    cout << "Before Swapping:" << endl;
+    n1.display();
+
+    n1.swapNumbers(4,34);
+
+    cout << "After Swapping:" << endl;
+    s1.display();
+
+    return 0;
+}
