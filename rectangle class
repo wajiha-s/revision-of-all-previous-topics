@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class rectangle
+{
+private:
+	int length;
+	int width = 5;
+public:
+	void setlength(int l)
+	{
+		length = l;
+	}
+	void setwidth(int w)
+	{
+		width = w;
+	}
+	int calculate()
+	{
+		return length * width;
+	}
+	void display()
+	{
+		cout << "area of rectangle=" << calculate() << endl;
+	}
+};
+int main()
+{
+	rectangle r1;
+	r1.setlength(24);
+	r1.display();
+	return 0;
+}
